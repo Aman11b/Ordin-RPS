@@ -1,0 +1,123 @@
+.agdasima-regular {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    font-family: "Agdasima", sans-serif; /* Set a global font */
+}
+.Welcome-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #EF5A6F;
+    color: #001F3F;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#play-btn{
+    margin-top: 30px;
+    padding:25px 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: #001F3F;
+    color: aliceblue ;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+#play-btn:hover{
+    background-color: #81DAE3;
+}
+.game-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #EEDF7A;
+    color: #001F3F;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.choices{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+.choice-btn{
+    margin-top: 30px;
+    padding:30px 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: #001F3F;
+    color: aliceblue ;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.choice-btn:hover{
+    background-color: #D91656;
+
+}
+.results,.score{
+    font-size: 1.5rem;                   /* Font size for results */
+    margin-bottom: 20px;                /* Space below results */
+    color: #001F3F; 
+}
+.result-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #001F3F;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#result-message{
+    font-size: 3em;                     /* Large font size for result message */
+    color:#001F3F;                     /* White color for result text */
+    margin-bottom: 30px; 
+
+}
+#play-again-btn{
+    margin-top: 30px;
+    padding:30px 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: #001F3F;
+    color: aliceblue ;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+}
+#play-again-btn:hover{
+    background-color: #910A67;
+
+}
+/* Background for Win */
+.win-background {
+    background-color: #FAEF5D;  /* Green for win */
+}
+
+/* Background for Lose */
+.lose-background {
+    background-color: #0C0C0C;  /* Red for lose */
+}
+
+/* Background for Tie */
+.tie-background {
+    background-color: #005B41;  /* Orange for tie */
+}

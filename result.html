@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Result</title>
+    <link rel="stylesheet" href=".//style.css">
+</head>
+<body>
+    <div class="result-container">
+        <h1 id="result-message">You Win!</h1>
+        <button id="play-again-btn">Play Again</button>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+            const result=localStorage.getItem("gameResult");
+            const resultMessage=document.getElementById("result-message");
+
+            const body=document.body;
+            if(result){
+                resultMessage.textContent=result;
+            }
+            if (result){
+                resultMessage.textContent = result;
+                
+                // Dynamically add class based on result
+                if (result === "You Win!") {
+                    body.classList.add('win-background');
+                }
+                else if (result === "You Lose!") {
+                    body.classList.add('lose-background');
+                }
+                else if (result === "It's a Tie!") {
+                    body.classList.add('tie-background');
+                }
+            }
+        });
+
+        document.getElementById("play-again-btn").addEventListener("click",function(){
+            localStorage.removeItem("gameResult");
+            window.location.href="game.html"; //redirected to game page
+        });
+    </script>
+    
+</body>
+</html>
